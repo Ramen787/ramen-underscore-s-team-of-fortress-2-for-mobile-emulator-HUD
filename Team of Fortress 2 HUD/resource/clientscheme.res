@@ -3033,7 +3033,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2"
+				"name"		"TF2 Build"
 				"tall"		"16"
 				"tall_hidef"	"22"
 				"tall_lodef"	"22"
