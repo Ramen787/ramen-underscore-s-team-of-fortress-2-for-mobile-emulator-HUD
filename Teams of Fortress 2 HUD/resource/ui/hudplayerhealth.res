@@ -5,8 +5,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudPlayerHealth"
-		"xpos"			"c-259"		[$WIN32]
-		"ypos"			"c174"	[$WIN32]
+		"xpos"			"c-275"		[$WIN32]
+		"ypos"			"c227"	[$WIN32]
 		"zpos"			"2"
 		"wide"			"250"
 		"tall"			"120"
@@ -20,12 +20,11 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImage"
-		"xpos"			"75"
-		"xpos_minmode"	"60"
-		"ypos"			"35"
+		"xpos"			"0"
+		"ypos"			"-100"
 		"zpos"			"4"
-		"wide"			"51"
-		"tall"			"51"
+		"wide"			"102"
+		"tall"			"240"
 		"visible"		"0"
 		"enabled"		"0"
 		"scaleImage"	"1"	
@@ -34,13 +33,13 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImageBG"
-		"xpos"			"73"
-		"ypos"			"33"
+		"xpos"			"0"
+		"ypos"			"-100"
 		"zpos"			"3"
 		"wide"			"0"
 		"tall"			"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"image"			"../hud/health_bg"
 		"scaleImage"	"1"	
 	}	
@@ -62,17 +61,17 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
-		"xpos"			"76"
-		"ypos"			"52"	[$WIN32]
-		"zpos"			"5"
+		"xpos"			"64"
+		"ypos"			"-3"	[$WIN32]
+		"zpos"			"6"
 		"wide"			"50"
 		"tall"			"18"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
-		"font"			"HudClassHealthBuild"
-		"fgcolor"		"0 255 0 255"
+		"font"			"TF2Build12"
+		"fgcolor"		"white"
 	}
 	"PlayerStatusMaxHealthValue"
 	{
@@ -594,5 +593,31 @@
 		"scaleImage"	"1"	
 		"image"			"../vgui/slowed"
 		"fgcolor"		"TanDark"
+	}
+	"Healthbar"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"Healthbar"
+		"xpos"			"50"
+		"ypos"			"2"
+		"zpos"			"5"
+		"wide"			"77"
+		"tall"			"8"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"Teams of Fortress 2 health"
+	}
+	"HealthbarBG"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"HealthbarBG"
+		"xpos"			"48"
+		"ypos"			"0"
+		"zpos"			"4"
+		"wide"			"81"
+		"tall"			"12"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"Teams of Fortress 2 health Bg"
 	}
 }

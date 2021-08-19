@@ -18,6 +18,13 @@ Scheme
 	//////////////////////// COLORS ///////////////////////////
 	Colors
 	{
+		// custom hud colors
+		"Teams of Fortress 2 health" "0 183 29 255"
+		"Teams of Fortress 2 health Bg" "118 107 95 255"
+		"Alternated Blurple" "105 160 255 255"
+		"Alternated Crimson" "255 0 30 255"
+		"Teams of Fortress 2 low health" "183, 10, 0"
+		
 		// base colors
 		"Orange"			"178 82 22 255"
 		"OrangeDim"			"178 82 22 120"
@@ -3029,12 +3036,64 @@ Scheme
 			}
 		}
 		
-		"HudClassHealthBuild"
+		"TF2Build16"
 		{
 			"1"
 			{
 				"name"		"TF2 Build"
 				"tall"		"16"
+				"tall_hidef"	"22"
+				"tall_lodef"	"22"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"TF2Build14"
+		{
+			"1"
+			{
+				"name"		"TF2 Build"
+				"tall"		"14"
+				"tall_hidef"	"22"
+				"tall_lodef"	"22"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"TF2Build12"
+		{
+			"1"
+			{
+				"name"		"TF2 Build"
+				"tall"		"12"
+				"tall_hidef"	"22"
+				"tall_lodef"	"22"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"TF2Build18"
+		{
+			"1"
+			{
+				"name"		"TF2 Build"
+				"tall"		"18"
+				"tall_hidef"	"22"
+				"tall_lodef"	"22"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"TF2Build120"
+		{
+			"1"
+			{
+				"name"		"TF2 Build"
+				"tall"		"20"
 				"tall_hidef"	"22"
 				"tall_lodef"	"22"
 				"weight"	"500"

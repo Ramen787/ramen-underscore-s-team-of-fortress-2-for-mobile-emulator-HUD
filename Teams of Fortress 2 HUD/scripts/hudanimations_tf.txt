@@ -208,7 +208,7 @@ event HudHealthBonusPulse
 {
 	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"		Linear 0.0 0.2
 	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.2 0.4
-
+	Animate	PlayerStatusHealthValue			fgcolor		"Alternated Blurple" Linear 0.0 0.0
 	RunEvent HudHealthBonusPulseLoop	0.4
 }
 
@@ -222,7 +222,8 @@ event HudHealthBonusPulseStop
 {
 	StopEvent HudHealthBonusPulse 0.0
 	StopEvent HudHealthBonusPulseLoop 0.0
-}
+	Animate	PlayerStatusHealthValue			fgcolor		"white" Linear 0.0 0.0
+} 
 
 //===========================================
 
@@ -231,6 +232,8 @@ event HudHealthDyingPulse
 {
 	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"		Linear 0.0 0.075
 	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.125 0.075
+	Animate	PlayerStatusHealthValue			fgcolor		"Teams of Fortress 2 low health" Linear 0.0 0.0
+
 	
 	RunEvent HudHealthDyingPulseLoop	0.25
 }
@@ -253,6 +256,9 @@ event HudLowAmmoPulse
 {
 	Animate	HudWeaponLowAmmoImage		Alpha		"255"		Linear 0.0 0.075
 	Animate	HudWeaponLowAmmoImage		Alpha		"0"			Linear 0.125 0.075
+	Animate	AmmoInClip			fgcolor		"Teams of Fortress 2 low health" Linear 0.0 0.0
+	Animate	AmmoInReserve			fgcolor		"Teams of Fortress 2 low health" Linear 0.0 0.0
+	Animate	AmmoNoClip			fgcolor		"Teams of Fortress 2 low health" Linear 0.0 0.0
 	
 	RunEvent HudLowAmmoPulseLoop	0.25
 }
@@ -267,6 +273,9 @@ event HudLowAmmoPulseStop
 {
 	StopEvent HudLowAmmoPulse 0.0
 	StopEvent HudLowAmmoPulseLoop 0.0
+	Animate	AmmoInClip			fgcolor		"white" Linear 0.0 0.0
+	Animate	AmmoInReserve			fgcolor		"white" Linear 0.0 0.0
+	Animate	AmmoNoClip			fgcolor		"white" Linear 0.0 0.0
 }
 
 //===========================================
